@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: web-app
 spec:
-  replicas: 10
+  replicas: 25
   selector:
     matchLabels:
       app: web-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web-app
-          image: vs0uz4/conversao-temperatura:v1
+          image: vs0uz4/conversao-temperatura:latest
           ports:
             - containerPort: 8080
 ---
