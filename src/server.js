@@ -44,7 +44,7 @@ app.post('/', (req, res) => {
         }
     }
 
-    res.render('index', { valorConvertido: resultado });
+    res.render('index', { valorConvertido: resultado, os: os });
  });
 
 app.listen(8080, () => {
