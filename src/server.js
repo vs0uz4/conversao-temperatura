@@ -30,7 +30,7 @@ app.get('/celsius/:valor/fahrenheit', (req, res) => {
 
 app.get('/', (req, res) => {
 
-    res.render('index',{valorConvertido: ''});
+    res.render('index',{ valorConvertido: '', os: os });
 });
 
 app.post('/', (req, res) => {
@@ -44,7 +44,7 @@ app.post('/', (req, res) => {
         }
     }
 
-    res.render('index', {valorConvertido: resultado});
+    res.render('index', { valorConvertido: resultado });
  });
 
 app.listen(8080, () => {
